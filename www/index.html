@@ -1,47 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mathilde Scholz</title>
-    <meta charset="utf-8">
-</head>
-    
-<body>
-        <!--best website  -->
-        
-    <header> 
-            
-        <a href="http://oderkurz-filmspektakel.de">   <h1>Mathilde Scholz</h1> </a>
-        <p>
-            Service Design
-        </p>
 
-        <!--home, about, contact-->
-        <ul>
-            <li><a href="/">Home</a></li> 
-            <li><a href="/">About</a></li> 
-            <li><a href="/">Contact</a></li>
-        </ul>
-    </header>
     
         <main>
     
 </main>
-    <div>
-        <a href="/pojects/project1.html">
-            <img src="pics/Cloud_Life.jpg">
-            <h2>atmo</h2>
-        </a>
-        <a href="/pojects/project2.html">
-            <img src="pics/test_portfolio.jpg">
-            <h2>atmo</h2>
-        </a>
-        <a href="/pojects/project3.html">
-            <img src="pics/test_portfolio.jpg">
-            <h2>atmo</h2>
-        </a>
 
 
-    </div>
+        {{#section projects multiple=true}}
+        <a href="{{_permalink}}">
+            {{image type=image}}
+   
+            <h2>{{title}}</h2>
+        </a> 
+  
+        {{/section}}  
+
+      
+           
+
+</li>
+    
 
 </body>
 </html>
