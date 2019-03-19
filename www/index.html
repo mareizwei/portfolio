@@ -1,24 +1,21 @@
-
+{{> head}}
     
         <main>
     
-</main>
+
 
 
         {{#section projects multiple=true}}
-        <a href="{{_permalink}}">
+        <a href="{{_permalink}}" class="project-item">
             {{image type=image}}
    
-            <h2>{{title}}</h2>
+            <h3>{{title}}</h3> 
         </a> 
   
         {{/section}}  
 
-      
-           
-
-</li>
     
+    </main>
 
 </body>
 </html>
